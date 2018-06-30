@@ -1,0 +1,109 @@
+<div class="container" id="bg" action="#" method="POST">
+  <div class="form-group" id="form">
+    <img src="../../assets/images/logo.png" alt="云南大学">
+    <h3><b>单位注册</b></h3>
+
+    <div class="row">
+        <div class="col-sm-6">
+            <label for="unitName">单位名称</label>
+            <input class="form-control" id="unitName" name="unitName">
+        </div>
+        <div class="col-sm-6">
+            <label for="pastUnitName">单位曾用名</label>
+            <input class="form-control" id="pastUnitName" name="pastUnitName">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6">
+            <label for="kind">机构类型</label>
+            <select class="form-control" id="kind" name="kind">
+              <option>请选择机构类型</option>
+              <option>事业法人</option>
+              <option>企业法人</option>
+              <option>社团法人</option>
+              <option>其它</option>
+            </select>
+        </div>
+        <div class="col-sm-6">
+          <label for="nature">单位性质</label>
+          <select class="form-control" id="nature" name="nature">
+            <option>请选择单位性质</option>
+            <option>科研设计机关</option>
+            <option>高等教育机关</option>
+            <option>医疗卫生单位</option>
+            <option>其它</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6">
+            <label for="scale">公司规模</label>
+            <select class="form-control" id="scale" name="scale">
+              <option>请选择公司规模</option>
+              <option>0-50人</option>
+              <option>51-100人</option>
+              <option>101-150人</option>
+              <option>151-200人</option>
+              <option>200人以上</option>
+            </select>
+        </div>
+        <div class="col-sm-6">
+          <label for="trade">所属行业</label>
+          <select class="form-control" id="trade" name="trade">
+            <option>请选择所属行业</option>
+            <option>农业</option>
+            <option>教育业</option>
+            <option>制造业</option>
+            <option>批发和零售业</option>
+            <option>其它</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6">
+            <label for="address">通讯地址</label>
+            <input class="form-control" id="address" name="address">
+        </div>
+        <div class="col-sm-6">
+            <label for="tel">联系电话</label>
+            <input class="form-control" id="tel" name="tel">
+        </div>
+      </div>
+
+      <div class="row">
+          <div class="col-sm-6">
+              <label for="accountName">账户名</label>
+              <input class="form-control" id="accountName" name="accountName">
+          </div>
+          <div class="col-sm-6">
+              <label for="passwd">密码</label>
+              <input class="form-control" id="passwd" name="passwd" type="password">
+          </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <label for="accountContactName">账户联系人姓名</label>
+                <input class="form-control" id="accountContactName" name="accountContactName">
+            </div>
+            <div class="col-sm-6">
+                <label for="contactName">联系电话</label>
+                <input class="form-control" id="contactName" name="contactName">
+            </div>
+          </div>
+          <div id="btn-group">
+              <button class="btn btn-danger" type="button">
+                  <a href="http://localhost:4200/" style="color: white;">取消</a>
+              </button>
+              <button class="btn btn-success" type="button">
+                  <a routerLink="/log_in" style="color: white;">返回登录</a>
+              </button>
+              <button class="btn btn-primary" type="button" onclick="alertMsg2()">
+                <a href="#" style="color: white;">注册</a>
+              </button>
+            </div>
+        </div>
+  </div>

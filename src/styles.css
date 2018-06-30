@@ -1,0 +1,46 @@
+/* You can add global styles to this file, and also import other style files */
+@import
+url(https://cdn.bootcss.com/bootstrap/4.1.0/css/bootstrap.min.css);
+@import
+url(https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css);
+*{
+  overflow-x: hidden;
+}
+.float_l{
+  float: left;
+}
+
+.float_r{
+  float: right;
+}
+
+/* 列表数据的全局样式 */
+.list a{
+  text-decoration: none;
+}
+.list p{
+  display: inline-block;
+}
+.list span{
+  float: right;
+  font-size: 12px;
+  padding: 5px;
+  /* color: aquamarine; */
+}
+.seg_line{
+  width: 110%;
+  border: 1px dotted #999999;
+}
+.list{
+  margin-top: -20px;
+}
+.lists{
+  margin-top: 20px;
+}
+.center{
+  margin: 0 auto;
+}
+label{
+  margin-top: 8px;
+  margin-bottom: -5px;
+}

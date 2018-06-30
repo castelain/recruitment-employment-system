@@ -1,0 +1,72 @@
+<div class="container" id="bg" action="#" method="POST">
+  <div class="form-group" id="form">
+    <h3>毕业回访表单</h3>
+      <div class="row">
+        <div class="col-sm-6">
+            <label for="background">学历</label>
+          <select class="form-control" id="background" name="background" required [(ngModel)]="returnForm.background">
+              <option *ngFor="let item of background" >{{item}}</option>
+          </select>
+          <!-- <div [hidden]="background.valid || background.pristine" class="alert alert-danger">
+            "学历"为必填项！
+          </div> -->
+        </div>
+        <div class="col-sm-6">
+          <label for="department">院系</label>
+          <select class="form-control" id="department" name="department" required [(ngModel)]="returnForm.department">
+            <option *ngFor="let item of department" >{{item}}</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6">
+            <label for="major">专业</label>
+            <select class="form-control" id="major" name="major" required [(ngModel)]="returnForm.major">
+              <option *ngFor="let item of major" >{{item}}</option>
+            </select>
+        </div>
+        <div class="col-sm-6">
+          <label for="class">班级</label>
+          <select class="form-control" id="class" name="class" required [(ngModel)]="returnForm.banji">
+            <option *ngFor="let item of class" >{{item}}</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6">
+            <label for="stuID">学号</label>
+            <input class="form-control" id="stuID" name="stuID" required [(ngModel)]="returnForm.stuId">
+        </div>
+        <div class="col-sm-6">
+            <label for="name">姓名</label>
+            <input class="form-control" id="name" name="name" required [(ngModel)]="returnForm.name">
+        </div>
+      </div>
+
+        <div class="row">
+          <div class="col-sm-6">
+              <label for="graduateTime">毕业时间</label>
+              <input type="date" id="graduateTime" class="form-control" name="graduateTime">
+          </div>
+          <div class="col-sm-6">
+            <label for="target">毕业去向</label>
+            <select class="form-control" id="target" name="target" required [(ngModel)]="returnForm.target">
+              <option *ngFor="let item of target" >{{item}}</option>
+            </select>
+          </div>
+        </div>
+        <div id="btn-group">
+          <button class="btn btn-danger" type="button">
+              <a href="#"  style="color: white;">返回首页</a>
+          </button>
+          <button class="btn btn-success" type="reset">重置
+            <!-- <a style="color: white;">重置</a> -->
+          </button>
+          <button class="btn btn-primary" type="submit" onclick="alertMsg()">
+            <a style="color: white;">提交</a>
+          </button>
+        </div>
+  </div>
+</div>

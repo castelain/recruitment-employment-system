@@ -1,0 +1,29 @@
+<app-pictures></app-pictures>
+<div class="row">
+  <div class="col-sm-8">
+    <div *ngFor="let data of homeDate" class="block">
+      <fieldset>
+        <legend>
+          {{data.catalog}}
+        </legend>
+        <ul *ngFor="let aTitle of data.title" >
+          <li><a href="#">{{aTitle}}</a></li>
+        </ul>
+      </fieldset>
+    </div>
+  </div>
+  <div class="col-sm-4" id="side">
+    <div>
+      <fieldset *ngFor="let data of sideData" >
+        <legend>
+          {{data.catalog}}
+        </legend>
+        <div *ngFor="let content of data.content" >
+          <h5><a href="#">{{content.title}}</a></h5>
+          <p>{{content.detail}}</p>
+          <hr>
+        </div>
+      </fieldset>
+    </div>
+  </div>
+</div>

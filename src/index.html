@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>System</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+  <script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="assets/pages/form_style.css">
+  <script src="assets/pages/form_script.js"></script>
+</head>
+<body>
+  <!-- 根组件 -->
+  <div class="container-fluid">
+    <app-root></app-root>
+  </div>
+
+  <!-- “学生”链接的模态框 -->
+  <div class="modal fade" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <!-- 模态框头部 -->
+          <div class="modal-header">
+            <h4 class="modal-title">提示</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+
+          <!-- 模态框主体 -->
+          <div class="modal-body">
+            前往填写回访表单
+          </div>
+
+          <!-- 模态框底部 -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary btn-block" data-dismiss="modal">否</button>
+            <button type="button" class="btn btn-success btn-block">
+              <a href="./assets/pages/returnForm.html" target="_self">是</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

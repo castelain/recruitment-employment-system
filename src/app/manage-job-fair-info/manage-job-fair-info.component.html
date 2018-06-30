@@ -1,0 +1,110 @@
+<div class="container" id="bg" action="#" method="POST">
+  <div class="form-group" id="form">
+    <img src="../../assets/images/icon.png" alt="云南大学校徽">
+    <h3><b>招聘会信息管理--列表</b></h3>
+
+    <div class="row">
+        <div class="col-sm-6">
+            <label for="compName">单位名称</label>
+            <input class="form-control" id="compName" name="compName">
+        </div>
+        <div class="col-sm-6">
+            <label for="pastCompName">曾用名</label>
+            <input class="form-control" id="pastCompName" name="pastCompName">
+        </div>
+      </div>
+
+      <div class="row">
+          <div class="col-sm-6">
+              <label for="year">招聘年份</label>
+              <select class="form-control" id="year" name="year">
+                <option *ngFor="let item of year">{{item}}</option>
+              </select>
+          </div>
+          <div class="col-sm-6">
+              <label for="order">场次</label>
+              <select class="form-control" id="order" name="order">
+                <option *ngFor="let item of order">{{item}}</option>
+              </select>
+          </div>
+        </div>
+
+    <div class="row">
+        <div class="col-sm-6">
+            <label for="major">专业名称</label>
+            <select class="form-control" id="major" name="major">
+              <option *ngFor="let item of major">{{item}}</option>
+            </select>
+        </div>
+        <div class="col-sm-6">
+            <label for="planNum">计划人数</label>
+            <input type="text" id="planNum" name="planNum" class="form-control">
+        </div>
+      </div>
+
+      <div class="row">
+          <div class="col-sm-6">
+              <label for="compName">单位名称</label>
+              <input class="form-control" id="compName" name="compName">
+          </div>
+          <div class="col-sm-6">
+              <label for="target">毕业去向</label>
+              <select class="form-control" id="target" name="target">
+                <option *ngFor="let item of target" >{{item}}</option>
+              </select>
+            </div>
+      </div>
+
+      <div>
+          <label for="planNote">计划备注</label>
+          <input type="text" id="planNote" name="planNote" class="form-control">
+      </div>
+
+      <div id="btn-group4">
+          <button class="btn btn-success" type="button">
+              <a routerLink="/manage_employment_info" routerLinkActive="active">毕业生就业信息管理</a>
+          </button>
+          <button class="btn btn-primary" type="button">
+              <a href="#">查询</a>
+          </button>
+          <button class="btn btn-danger" type="button">
+            <a href="">重置</a>
+          </button>
+          <button class="btn btn-warning" type="button">
+            <a href="#">导出</a>
+          </button>
+      </div>
+      <hr>
+
+      <div class="container">
+          <table class="table table-bordered table-hover">
+            <thead class="bg-info">
+              <tr>
+                <th>单位名称</th>
+                <th>招聘年份</th>
+                <th>场次</th>
+                <th>专业名称</th>
+                <th>学历</th>
+                <th>计划人数</th>
+                <th>计划备注</th>
+                <th>操作账户</th>
+                <th>记录时间</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr>
+                  <td>xxx公司</td>
+                  <td>2019年</td>
+                  <td>4-11第二场</td>
+                  <td>软件工程、网络空间安全</td>
+                  <td>大三</td>
+                  <td>100-200</td>
+                  <td></td>
+                  <td>xxx公司负责人</td>
+                  <td>2019-4-8</td>
+                </tr>
+            </tbody>
+          </table>
+    </div>
+  </div>
+</div>

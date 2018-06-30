@@ -1,0 +1,12 @@
+<app-pictures></app-pictures>
+<div class="lists">
+  <ul *ngFor="let item of data" >
+    <li>
+      <div class="list">
+        <a href="#"><p>{{ item.title }}</p></a>
+        <span>{{ item.time }}</span>
+        <div class="seg_line"></div>
+      </div>
+    </li>
+  </ul>
+</div>

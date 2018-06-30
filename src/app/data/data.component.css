@@ -1,0 +1,13 @@
+*{
+  overflow: hidden;
+}
+#side_catalog{
+  margin-top: 20px;
+  /* background-color: #0099FF; */
+  border: 2px dotted #0099FF;
+}
+h4{
+  color: #0099FF;
+  margin-left: 50px;
+  margin-bottom: 10px;
+}

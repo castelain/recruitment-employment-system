@@ -1,0 +1,17 @@
+#header{
+  height: 10%;
+  text-align: center;
+  margin: 0 auto;
+}
+div{
+  display: inline-block;
+  margin-right: 50px;
+}
+ul,ul > li{
+  display: inline-block;
+  margin-right: 40px;
+}
+#img_l{
+  margin-left: 90px;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,11 @@
+div{
+  color: white;
+  background-color: #0099CC;
+  text-align: center;
+  padding: 20px;
+  margin-left: -15px;
+  width: 110%;
+  margin-top: 20px;
+  /* position: fixed; */
+  /* bottom: 0; */
+}

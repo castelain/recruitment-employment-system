@@ -1,0 +1,83 @@
+<div class="container" id="bg" action="#" method="POST">
+  <div class="form-group" id="form">
+    <img src="../../assets/images/icon.png" alt="云南大学校徽">
+    <h3><b>招聘会申请表</b></h3>
+
+    <div class="row">
+        <div class="col-sm-6">
+            <label for="unitName">单位名称</label>
+            <input class="form-control" id="unitName" name="unitName">
+        </div>
+        <div class="col-sm-6">
+            <label for="manager">单位主管</label>
+            <input class="form-control" id="manager" name="manager">
+        </div>
+      </div>
+
+      <div class="row">
+          <div class="col-sm-6">
+              <label for="contactor1">联系人1</label>
+              <input class="form-control" id="contactor1" name="contactor1">
+          </div>
+          <div class="col-sm-6">
+              <label for="tel1">联系电话</label>
+              <input class="form-control" id="tel1" name="tel1">
+          </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <label for="contactor2">联系人2</label>
+                <input class="form-control" id="contactor2" name="contactor2">
+            </div>
+            <div class="col-sm-6">
+                <label for="tel2">联系电话</label>
+                <input class="form-control" id="tel2" name="tel2">
+            </div>
+          </div>
+
+      <div class="row">
+        <div class="col-sm-6">
+            <label for="major">招聘专业</label>
+            <select class="form-control" id="major" name="major">
+                <option *ngFor="let item of major" >{{item}}</option>
+            </select>
+        </div>
+        <div class="col-sm-6">
+          <label for="grade">招聘年级</label>
+          <select class="form-control" id="grade" name="grade">
+            <option *ngFor="let item of grade" >{{item}}</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6">
+            <label for="planNum">计划人数</label>
+            <input class="form-control" id="planNum" name="planNum">
+        </div>
+        <div class="col-sm-6">
+            <label for="planTime">计划时间</label>
+            <input class="form-control" id="planTime" name="planTime">
+        </div>
+      </div>
+
+      <textarea placeholder="请填写公司介绍"  class="form-control"></textarea>
+
+      <textarea placeholder="请填写具体的招聘要求..."  class="form-control"></textarea>
+
+      <textarea placeholder="请填写工资待遇..."  class="form-control"></textarea>
+
+      <div id="btn-group">
+          <button class="btn btn-danger" type="button">
+              <a href="http://localhost:4200/" style="color: white;">取消</a>
+          </button>
+          <button class="btn btn-success" type="button">
+            <a href=""  style="color: white;">重置</a>
+          </button>
+          <button class="btn btn-primary" type="button" onclick="alertMsg3()">
+            <a href="#" style="color: white;">提交</a>
+          </button>
+      </div>
+  </div>
+</div>
